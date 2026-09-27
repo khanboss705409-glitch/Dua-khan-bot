@@ -141,6 +141,3 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
-Appstate.json
-appstate.json
-fbstate.json
