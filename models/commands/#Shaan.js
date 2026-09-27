@@ -13,13 +13,13 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
   var name = await Users.getNameUser(event.senderID);
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
-  if(react.includes("shan khan") ||
-     react.includes("Shaan Khan") || react.includes("SHAAN") || react.includes("shaan") ||
-react.includes("shan") ||
-react.includes("SHAAN KHAN") ||     
-react.includes("Shaan")) {
+  if(react.includes("Imran khan") ||
+     react.includes("jiju") || react.includes("khan") || react.includes("Khan") ||
+react.includes("khaan") ||
+react.includes("KHAN") ||     
+react.includes("@Zakhmi Sayar")) {
     var msg = {
-        body: `${name} 𝐘𝐀𝐑 𝐒𝐇𝐀𝐀𝐍 𝐊𝐎 𝐌𝐄𝐍𝐓𝐈𝐎𝐍 𝐍𝐀 𝐊𝐀𝐑𝐎 𝐌𝐔𝐉𝐇𝐄 𝐒𝐇𝐀𝐑𝐀𝐌 𝐀𝐀𝐓𝐈 𝐇𝐀𝐈🙈🙈🙈`,attachment: fs.createReadStream(__dirname + `/noprefix//1711811285337.jpg`)
+        body: `${name} 𝐘𝐀𝐑 𝐌𝐄𝐑𝐄 𝐁𝐎𝐒𝐒 𝐊𝐎 𝐌𝐄𝐍𝐓𝐈𝐎𝐍 𝐍𝐀 𝐊𝐀𝐑𝐎 𝐌𝐔𝐉𝐇𝐄 𝐒𝐇𝐀𝐑𝐀𝐌 𝐀𝐀𝐓𝐈 𝐇𝐀𝐈🙈🙈🙈`,attachment: fs.createReadStream(__dirname + `/noprefix/wa_image_2836424469127221083.jpg`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💋", event.messageID, (err) => {}, true)
