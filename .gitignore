@@ -1,0 +1,22 @@
+# Facebook Login - Ye sabse important hai, iski wajah se account udta hai
+appstate.json
+fbstate.json
+appstate.txt
+data.json
+*.cookie
+
+# Modules & Cache
+node_modules/
+modules/commands/cache/
+modules/commands/cache/*
+!modules/commands/cache/ZAKHMI.jpg
+tmp/
+logs/
+
+# Env & Token
+.env
+config.json
+.env.json
+
+# Backup
+backup/
